@@ -1,0 +1,5 @@
+
+"homepage": "https://www.vitor7goncalves.cf",
+    
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build",
