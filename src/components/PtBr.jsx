@@ -1,4 +1,4 @@
-import "./PtBr.css";
+import "./Body.css";
 
 import cape from "../assets/backgroud.png"
 import me from "../assets/me.png"

@@ -394,7 +394,12 @@
       width: 100%;
     }
 
+    .project-text {
+      width: 100% !important;
+    }
+
     .button-link {
+      max-width: 650px !important;
       margin-bottom: 3rem;
     }
   }
@@ -424,13 +429,6 @@
     }
 
     .coluna2 {
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-  }
-
-  @media screen and (max-width: 580px) {
-    .projets-video {
       padding-left: 2rem;
       padding-right: 2rem;
     }
