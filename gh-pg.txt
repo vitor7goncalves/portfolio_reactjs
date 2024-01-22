@@ -1,7 +1,7 @@
 npm install gh-pages --save-dev
 
 "homepage": "https://www.vitor7goncalves.cf",
-"homepage": "https://vitor7goncalves.github.io/Magus-Pocus-Page/",
+"homepage": "https://vitor7goncalves.github.io/portfolio_reactjs/",
     
 "predeploy": "npm run build",
 "deploy": "gh-pages -d build",

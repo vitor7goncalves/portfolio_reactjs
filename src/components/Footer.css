@@ -1,0 +1,94 @@
+.contentFooter {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 20rem;
+}
+
+.others {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    align-items: end;
+    justify-content: flex-end;
+}
+
+.backgroundFooter {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 70%;
+    height: 90%;
+    z-index: 5;
+}
+
+.mediaContent {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align: center;
+    z-index: 15;
+}
+
+.mediaTittle {
+    width: 100%;
+}
+
+.mediaTittle h2 {
+    text-shadow: .1px .1px .1px var(--gray-100);
+}
+
+.socialMedia {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    text-align: center;
+    z-index: 15;
+}
+
+.Icons {
+    width: 12%;
+    margin: 2%;
+}
+
+.socialMedia img:hover {
+    opacity: 0.7;
+}
+
+.footerEmail {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 80%;
+    align-items: end;
+    color: var(--white-100) !important;
+    z-index: 10;
+}
+
+.footerText {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 20%;
+    align-items: end;
+    color: var(--white-100) !important;
+    z-index: 10;
+}
+
+.footerEmail h4 {
+    margin: 1rem 2rem;
+}
+
+.footerText h4 {
+    margin: 2rem;
+}

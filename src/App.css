@@ -1,15 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,800;1,200;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+
 
 * {
   margin: 0;
+  padding: 0;
   list-style-type: none;
   text-decoration: none;
 }
 
 :root {
-  --font-primary: "Baloo Da 2", serif;
+  --font-primary: 'Lora', serif;
   max-width: 100%;
-  --font-secondary: "Josefin Slab", serif;
-  --font-action: "Muli", serif;
+  --font-secondary: 'Josefin Sans', sans-serif;
+  --white-100: #f5f5f5;
+  --blue-100: #002744;
+  --gray-100: #121214;
+  --gold-100: #b1ba00;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-primary);
+  text-shadow: 3px 3px 2px var(--gray-100);
+}
+
+p {
+  font-family: var(--font-secondary);
+  text-shadow: 3px 3px 2px var(--gray-100);
+  font-size: 1.2rem;
+}
+
+.goldButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 10%;
+  margin: 3%;
+  font-family: var(--font-primary);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--white-100);
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+.goldButton img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  transition: .5s;
+  z-index: 1;
+}
+
+.goldButton p {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  z-index: 5;
+}
+
+.blueButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 10%;
+  margin: 3%;
+  font-family: var(--font-primary);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--white-100);
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+.blueButton img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  transition: .5s;
+  z-index: 1;
+}
+
+.blueButton p {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  z-index: 5;
+}
+
+.whiteButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 10%;
+  margin: 3%;
+  font-size: 1.2rem;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  color: var(--blue-100);
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+.whiteButton img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  transition: .5s;
+  z-index: 1;
+}
+
+.whiteButton p {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  z-index: 5;
+}
+
+.buttonImg {
+  top: -2% !important;
+  left: 1% !important;
+}
+
+.buttonImg:hover {
+  opacity: 0.7;
+}
+
+.icon {
+  width: 10%;
 }
