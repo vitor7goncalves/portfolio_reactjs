@@ -20,8 +20,8 @@ export const Sidebar = () => {
                 <div className="top-bar">
                     <div className="top-bar-soon">
                         <div className="top-bar-soon-content">
-                            <p>E-mail: me@vitor7goncalves.gq</p>
-                            <img src={logo} className='logo' alt="" />
+                            <p>E-mail: vitor7goncalves@outlook.com</p>
+                            <a href=""><img src={logo} className='logo' alt="" /></a>
                         </div>
                         <div className='select'>
                             <button onClick={() => setLanguage("Pt-Br")}><img src={br} /></button>

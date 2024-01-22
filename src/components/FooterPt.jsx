@@ -7,7 +7,7 @@ import linkedin from "../assets/Icon/linkedin.png"
 
 export const FooterPt = () => {
     var text = "© 2024 Vitor7Goncalves. Está página foi criada com Vite.js e React.js";
-    var email = "E-mail: me@vitor7goncalves.gq";
+    var email = "E-mail: vitor7goncalves@outlook.com";
     var follow = "Siga me";
     var social = { 1: '', 2: '', 3: '', 4: '' };
 
