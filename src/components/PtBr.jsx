@@ -66,6 +66,11 @@ import img55 from "../assets/Background/Anim/quadro0055.png";
 import img56 from "../assets/Background/Anim/quadro0056.png";
 import img57 from "../assets/Background/Anim/quadro0057.png";
 
+import game00 from "../assets/Background/Anim2/game0000.png";
+import game01 from "../assets/Background/Anim2/game0001.png";
+import game02 from "../assets/Background/Anim2/game0002.png";
+import game03 from "../assets/Background/Anim2/game0003.png";
+
 const imagePaths = [
     img00, img01, img02, img03, img04, img05, img06, img07, img08, img09,
     img10, img11, img12, img13, img14, img15, img16, img17, img18, img19,
@@ -75,9 +80,14 @@ const imagePaths = [
     img50, img51, img52, img53, img54, img55, img56, img57
 ];
 
+const gamePaths = [
+    game00, game01, game02, game03
+];
+
 
 export const PtBr = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [currentImageIndexGame, setCurrentImageIndexGame] = useState(0);
 
     var textText = { 1: '', 2: '', 3: '', 4: '', 5: '', 6: '', 7: '', 8: '', 9: '' };
     var languageText = { 0: '', 1: '', 2: '', 3: '', 4: '', 5: '', 6: '', 7: '', 8: '', 9: '' };
@@ -111,6 +121,15 @@ export const PtBr = () => {
 
         // Limpar o intervalo quando o componente for desmontado ou quando necessário
         return () => clearInterval(intervalId);
+    }, []);
+
+    useEffect(() => {
+
+        const intervalIdGame = setInterval(() => {
+            setCurrentImageIndexGame((prevIndex) => (prevIndex + 1) % gamePaths.length);
+        }, 900);
+
+        return () => clearInterval(intervalIdGame);
     }, []);
 
     return (
@@ -196,24 +215,30 @@ export const PtBr = () => {
                             Projetos
                         </h2>
                         <div className="cards">
-                            <a href="" className="card">
-                                <h3>
-                                    Trabalhos para Terceiros
-                                </h3>
-                                <img src={imagePaths[currentImageIndex]} alt="" />
-                            </a>
-                            <a href="" className="card">
-                                <h3>
-                                    Jogos Digitais
-                                </h3>
-                                <img src={imagePaths[currentImageIndex]} alt="" />
-                            </a>
-                            <a href="" className="card">
-                                <h3>
-                                    Meus Projetos
-                                </h3>
-                                <img src={imagePaths[currentImageIndex]} alt="" />
-                            </a>
+                            <div className="capsuleCard">
+                                <a href="" className="card">
+                                    <h3>
+                                        Trabalhos para Terceiros
+                                    </h3>
+                                    <img src={imagePaths[currentImageIndex]} alt="" />
+                                </a>
+                            </div>
+                            <div className="capsuleCard">
+                                <a href="" className="card">
+                                    <h3>
+                                        Jogos Digitais
+                                    </h3>
+                                    <img src={gamePaths[currentImageIndexGame]} alt="" />
+                                </a>
+                            </div>
+                            <div className="capsuleCard">
+                                <a href="" className="card">
+                                    <h3>
+                                        Meus Projetos
+                                    </h3>
+                                    <img src={imagePaths[currentImageIndex]} alt="" />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

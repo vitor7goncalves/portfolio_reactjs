@@ -31,6 +31,10 @@ p {
   font-size: 1.2rem;
 }
 
+img {
+  object-fit: cover;
+}
+
 .goldButton {
   position: relative;
   display: flex;
