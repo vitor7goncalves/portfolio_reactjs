@@ -218,7 +218,7 @@
     }
 
     .secondArea h2 {
-        margin: 2rem 0rem -7rem 0rem;
+        margin: 2rem 0rem 2rem 0rem;
     }
 
     .cards {
@@ -226,13 +226,13 @@
     }
 
     .capsuleCard {
-        width: 50%;
+        width: 70%;
         height: 10rem;
-        margin: 2rem 0.5rem;
+        margin: 5rem 0.5rem;
     }
 }
 
-@media (max-width: 538px) {
+@media (max-width: 541px) {
     .About {
         margin-top: -2.5rem;
         background-size: 200%;
@@ -254,17 +254,15 @@
         margin-top: 0rem;
     }
 
-    .secondArea h2 {
-        margin: 2rem 0rem 0rem 0rem;
-    }
-
     .secondArea {
         background-repeat: repeat;
         background-color: var(--gray-100);
         margin: 0rem 0rem 5rem 0rem;
     }
+}
 
+@media (max-width: 421px) {
     .capsuleCard {
-        margin: 1rem 0.5rem;
+        margin: 3rem 0.5rem;
     }
 }
