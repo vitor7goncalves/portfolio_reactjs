@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
-    height: 20rem;
+    height: 25rem;
 }
 
 .others {
@@ -91,4 +91,65 @@
 
 .footerText h4 {
     margin: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .contentFooter {
+        height: 18rem;
+        margin-top: -4rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .contentFooter {
+        height: 18rem;
+        margin-top: -4rem;
+    }
+ 
+    .backgroundFooter {
+        width: 100%;
+    }
+
+    .others {
+        width: 60%;
+    }
+
+    .mediaContent {
+        width: 30%;
+    }
+
+    .socialMedia {
+        margin-left: -20%;
+    }
+
+    .Icons {
+        width: 70%;
+        margin: 2% 3% 0% 0%;
+    }
+}
+
+@media (max-width: 538px) {
+    .contentFooter {
+        flex-direction: column;
+    }
+
+    .others {
+        width: 100%;
+    }
+
+    .mediaContent {
+        width: 100%;
+    }
+
+    .socialMedia {
+        margin-left: 0%;
+    }
+
+    .Icons {
+        width: 10%;
+    }
+
+    .footerText {
+        height: 40%;
+    }
 }

@@ -105,7 +105,7 @@ export const PtBr = () => {
     languageText[9] = "Um jogo simples que simula rolagem de dados feita em Unity 2D. O jogo é de código aberto e para usar crie um novo projeto e substitua a pasta Assets. Acesse meu GitHub se quiser o código-fonte.";
     textText[1] = "Desenvolvedor de jogos e full-stack";
     textText[2] = "Sobre mim";
-    textText[3] = "Meu nome é Vitor Gonçalves Rodrigues, nasci no Rio de Janeiro em 2 de maio de 1982, moro em Ribeirão Preto no estado de São Paulo. Sou desenvolvedor de jogos e full-stack. Trabalhei em uma startup que tem um projeto de e-commerce por 9 meses. Hoje trabalho em projetos de jogos como freelancer, um deles é um jogo chamado Kami Kaido para um estúdio localizado no Porto - Portugal, além de outros projetos que menciono neste site. Sou apaixonado pelo que faço, tanto que considero mais um hobby do que um trabalho.";
+    textText[3] = "Olá, sou Vitor Gonçalves Rodrigues, desenvolvedor de jogos e full-stack. Nasci no Rio de Janeiro em 1982 e atualmente resido em Ribeirão Preto, SP. Minha paixão pela programação começou em 2016 durante a faculdade de Engenharia da Computação. Desde 2018, venho explorando o Unity e a linguagem CSharp, dedicado a transformar ideias criativas em experiências interativas e envolventes. Descubra mais sobre meu trabalho explorando o portfólio.";
     textText[4] = "Tecnologias";
     textText[5] = "Projetos";
     textText[6] = "Jogo que desenvolvi e vendo na Steam";

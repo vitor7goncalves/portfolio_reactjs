@@ -35,10 +35,37 @@
     z-index: 10;
 }
 
-.textContent h1, .textContent h2 {
+.textContent h1,
+.textContent h2 {
     margin: 2rem;
 }
 
 .textContent h1 {
     margin-top: 15rem;
+}
+
+@media (max-width: 1024px) {
+
+    .textContent h1,
+    .textContent h2 {
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .contentHeader {
+        height: 50vh;
+    }
+
+    .contentHeader img {
+        height: 100%;
+    }
+
+    .textContent h1 {
+        margin: 5rem 0rem -1rem 0rem;
+    }
+
+    .textContent h2 {
+        margin-bottom: 0rem;
+    }
 }

@@ -105,7 +105,7 @@ export const Eng = () => {
     languageText[9] = "A simple game that simulates dice scrolling made in Unity 2D. The game is open source and to use create a new project and replace the 'Assets' folder. Access my GitHub if you want the source code.";
     textText[1] = "Game developer and full-stack";
     textText[2] = "About me";
-    textText[3] = "My name is Vitor Gonçalves Rodrigues, I was born in Rio de Janeiro on May 2, 1982, I live in Ribeirão Preto in the state of São Paulo. I'm a full-stack game developer. I worked at a startup that has an e-commerce project for 9 months. Today I work on game projects as a freelancer, one of them is a game called Kami Kaido for a studio located in Porto - Portugal, in addition to other projects that I mention on this site. I'm passionate about what I do, so much so that I consider it more of a hobby than a job.";
+    textText[3] = "Hello, I'm Vitor Gonçalves Rodrigues, a game developer and full-stack enthusiast. Born in Rio de Janeiro in 1982, currently residing in Ribeirão Preto, SP. My passion for programming began in 2016 during my Computer Engineering studies. Since 2018, I've been exploring Unity and CSharp, dedicated to turning creative ideas into interactive and engaging experiences. Discover more about my work by exploring the portfolio.";
     textText[4] = "Features";
     textText[5] = "Projets";
     textText[6] = "Game I developed and sell on Steam";
