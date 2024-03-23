@@ -1,18 +1,16 @@
-import { useState } from "react";
 import "./Sidebar.css";
 import logo from "../assets/logo.png";
 import br from "../assets/br.jpg";
 import eua from "../assets/eua.jpg";
-import { Eng } from "./Eng";
-import { PtBr } from "./PtBr";
-import { FooterEng } from "./FooterEng";
-import { FooterPt } from "./FooterPt";
-import { HeaderEng } from "./HeaderEng";
-import { HeaderPt } from "./HeaderPt";
 
 export const Sidebar = () => {
-    const [language, setLanguage] = useState("Eng");
-    const [url, useUrl] = useState("Eng");
+    const ptBr = () => {
+        window.location.href = '/pt-br';
+    };
+
+    const eng = () => {
+        window.location.href = '/eng';
+    };
 
     return (
         <>
@@ -24,14 +22,11 @@ export const Sidebar = () => {
                             <a href=""><img src={logo} className='logo' alt="" /></a>
                         </div>
                         <div className='select'>
-                            <button onClick={() => setLanguage("Pt-Br")}><img src={br} /></button>
-                            <button onClick={() => setLanguage("Eng")}><img src={eua} /></button>
+                            <button onClick={ptBr}><img src={br} /></button>
+                            <button onClick={eng}><img src={eua} /></button>
                         </div>
                     </div>
                 </div>
-                {language === "Eng" ? <HeaderEng /> : <HeaderPt />}
-                {language === "Eng" ? <Eng /> : <PtBr />}
-                {language === "Eng" ? <FooterEng /> : <FooterPt />}
             </div>
         </>
     );

@@ -1,12 +1,20 @@
 import "./Body.css";
 import React, { useState, useEffect } from "react";
+import { Sidebar } from "./Sidebar";
+import { FooterPt } from "./FooterPt"
+import { HeaderPt } from "./HeaderPt";
 
 import me from "../assets/Photo/me.png"
 import csharp from "../assets/Icon/C Sharp.png"
-import photoshop from "../assets/Icon/photoshop.png"
+import git from "../assets/Icon/git.png"
 import unity from "../assets/Icon/unity.png"
 import javascript from "../assets/Icon/javascript.png"
 import html from "../assets/Icon/html-5.png"
+import css from "../assets/Icon/css.png"
+import vue from "../assets/Icon/vue.png"
+import react from "../assets/Icon/react.png"
+import blender from "../assets/Icon/blender.png"
+import sql from "../assets/Icon/sql.png"
 import img00 from "../assets/Background/Anim/quadro0000.png";
 import img01 from "../assets/Background/Anim/quadro0001.png";
 import img02 from "../assets/Background/Anim/quadro0002.png";
@@ -93,16 +101,17 @@ export const PtBr = () => {
     var languageText = { 0: '', 1: '', 2: '', 3: '', 4: '', 5: '', 6: '', 7: '', 8: '', 9: '' };
     var buttonText;
 
-    languageText[0] = "Venho desenvolvendo com a C Sharp há pouco mais de 2 ano. No entanto, o maior tempo foi dentro do Unity. Mas tenho pequenos projetos no GitHub onde usei essa ferramenta. E claro, a cada dia eu aprendo mais, porque meus estudos com C Sharp não param.";
-    languageText[1] = "Eu uso Adobe photoshop para criar minhas artes digitais. A versão em que estou trabalhando atualmente é 2019. Toda a arte que criei nos meus projetos foi 97% através do Photoshop. Como disse sobre mim, migrei há cerca de 2 anos para a arte digital. Porque passei a vida inteira desenhando e pintando de forma convencional";
-    languageText[2] = "E para completar o trio front-end, não poderia deixar de fora o CSS. Além de Javascript e HTML, estudo CSS desde setembro de 2020. E junto com as outras tecnologias, criei alguns projetos que estão no meu GitHub, e também usei na Big2be.";
-    languageText[3] = "A tecnologia que eu mais uso agora. Com Unity criei e publiquei meu primeiro jogo na Steam, Magus Pocus. Unity é um motor de desenvolvimento que utiliza a linguagem de programação C Sharp, muito comum para criar jogos 2D e 3D.";
-    languageText[4] = "Estou aprendendo sobre Javascript desde setembro de 2020. Apesar de focar mais em C# e Unity, trabalhei em uma empresa localizada em Ribeirão Preto - SP chamada Big2be, utilizando meus conhecimentos em Javascript. Empresa especializada em e-commerce para supermercados, restaurantes e similares.";
-    languageText[5] = "Venho estudando e me aprimorando em HTML junto com Javascript. E assim como no JS, usei HTML em meus projetos pessoais e na empresa citada acima.";
-    languageText[6] = "Magus Pocus é um jogo de plataforma 2D. Eu o criei há alguns meses e levou 6 meses para ser concluído. Eu desenvolvi do zero toda a arte e a programação.";
-    languageText[7] = "Paradise Beach são Assets que contêm algumas imagens para criação de cenários em jogos. Contém 3 variações de caules e copas de coqueiros para você combinar e criar diferentes tipos de coqueiros, arbustos, fundo de praia, pedras e chão";
-    languageText[8] = "Recriei a página da Netflix no dia 7 de janeiro. 2021, para aprimorar meus conhecimentos em Javascript, HTML e CSS. Acesse meu GitHub se quiser o código-fonte.";
-    languageText[9] = "Um jogo simples que simula rolagem de dados feita em Unity 2D. O jogo é de código aberto e para usar crie um novo projeto e substitua a pasta Assets. Acesse meu GitHub se quiser o código-fonte.";
+    languageText[0] = "Venho desenvolvendo com o CSharp há pouco mais de 2 anos. No entanto, a maior parte desse tempo foi dentro do Unity. Tenho também alguns pequenos projetos no GitHub onde utilizei essa ferramenta. E, claro, a cada dia aprendo mais, pois meus estudos com C# não param.";
+    languageText[1] = "Todos os meus jogos e trabalhos freelancers de jogos foram feitos utilizando o Unity. Assim como com o CSharp, comecei a usar o Unity há um pouco mais de 2 anos. Inicialmente com o Unity 2D, e agora tenho explorado bastante o Unity 3D.";
+    languageText[2] = "Embora eu não seja um especialista em Git e GitHub, tudo o que aprendi e utilizo é suficiente para trabalhar em equipe e manter meus projetos versionados. Caso precise, por algum motivo, recuperar uma versão anterior dos meus projetos, estou apto a fazê-lo.";
+    languageText[3] = "Comecei a aprender Javascript em 2021. Apesar de focar mais em C# e Unity, trabalhei em uma empresa localizada em Ribeirão Preto - SP chamada Big2be, utilizando meus conhecimentos em Javascript. Essa empresa é especializada em e-commerce para supermercados, restaurantes e similares.";
+    languageText[4] = "Meus estudos em HTML começaram junto com Javascript. Assim como no JS, utilizei HTML em meus projetos pessoais e na empresa citada acima.";
+    languageText[5] = "E para completar o trio front-end, não poderia deixar de fora o CSS. Além de Javascript e HTML, estudo CSS desde 2021. Junto com as outras tecnologias, criei alguns projetos que estão no meu GitHub e também os utilizei na Big2be.";
+    languageText[6] = "Vue.js é um framework JavaScript de código-aberto. Minha experiência profissional com esse framework começou em junho de 2023. Atualmente, estou trabalhando em alguns projetos freelancers para uma empresa chamada Orfeu Digital.";
+    languageText[7] = "React.js é um framework JavaScript que foi criado pela Meta (anteriormente conhecida como Facebook) e é mantido por ela e pela comunidade de desenvolvedores em todo o mundo. Diferente do Vue.js, minha experiência com React é muito mais em estudos, que iniciei em agosto de 2023. Inclusive, este site foi desenvolvido em React.js.";
+    languageText[8] = "Minha experiência em SQL começou em novembro de 2021 na empresa Big2be. Embora tenham se passado alguns anos, essa tecnologia é a que menos pratico em meus projetos. Atualmente, a utilizo em meus projetos na Orfeu Digital.";
+    languageText[9] = "Em 10 de março de 2024, comecei a estudar Blender. Para aprofundar meus conhecimentos em criação de jogos 3D, comecei a estudar e praticar modelagem 3D. Com o objetivo de economizar em meus projetos pessoais, eu mesmo crio os objetos 3D que utilizo nos jogos que desenvolvo.";
+
     textText[1] = "Desenvolvedor de jogos e full-stack";
     textText[2] = "Sobre mim";
     textText[3] = "Olá, sou Vitor Gonçalves Rodrigues, desenvolvedor de jogos e full-stack. Nasci no Rio de Janeiro em 1982 e atualmente resido em Ribeirão Preto, SP. Minha paixão pela programação começou em 2016 durante a faculdade de Engenharia da Computação. Desde 2018, venho explorando o Unity e a linguagem CSharp, dedicado a transformar ideias criativas em experiências interativas e envolventes. Descubra mais sobre meu trabalho explorando o portfólio.";
@@ -134,7 +143,9 @@ export const PtBr = () => {
 
     return (
         <>
-            <body>
+            <Sidebar />
+            <HeaderPt />
+            <div>
                 <div className="contentBody">
                     <div className="About">
                         <div className="aboutImg">
@@ -166,17 +177,23 @@ export const PtBr = () => {
                                 <div className="itens">
                                     <img src={unity} alt="unity" className="icon" />
                                     <p className="text">
-                                        {languageText[3]}
+                                        {languageText[1]}
+                                    </p>
+                                </div>
+                                <div className="itens">
+                                    <img src={git} alt="javascript" className="icon" />
+                                    <p className="text">
+                                        {languageText[2]}
                                     </p>
                                 </div>
                                 <div className="itens">
                                     <img src={javascript} alt="javascript" className="icon" />
                                     <p className="text">
-                                        {languageText[4]}
+                                        {languageText[3]}
                                     </p>
                                 </div>
                                 <div className="itens">
-                                    <img src={javascript} alt="javascript" className="icon" />
+                                    <img src={html} alt="csharp" className="icon" />
                                     <p className="text">
                                         {languageText[4]}
                                     </p>
@@ -184,27 +201,33 @@ export const PtBr = () => {
                             </div>
                             <div className="Two">
                                 <div className="itens">
-                                    <img src={csharp} alt="csharp" className="icon" />
+                                    <img src={css} alt="unity" className="icon" />
                                     <p className="text">
-                                        {languageText[0]}
+                                        {languageText[5]}
                                     </p>
                                 </div>
                                 <div className="itens">
-                                    <img src={unity} alt="unity" className="icon" />
+                                    <img src={vue} alt="javascript" className="icon" />
                                     <p className="text">
-                                        {languageText[3]}
+                                        {languageText[6]}
                                     </p>
                                 </div>
                                 <div className="itens">
-                                    <img src={javascript} alt="javascript" className="icon" />
+                                    <img src={react} alt="javascript" className="icon" />
                                     <p className="text">
-                                        {languageText[4]}
+                                        {languageText[7]}
                                     </p>
                                 </div>
                                 <div className="itens">
-                                    <img src={javascript} alt="javascript" className="icon" />
+                                    <img src={sql} alt="javascript" className="icon" />
                                     <p className="text">
-                                        {languageText[4]}
+                                        {languageText[8]}
+                                    </p>
+                                </div>
+                                <div className="itens">
+                                    <img src={blender} alt="javascript" className="icon" />
+                                    <p className="text">
+                                        {languageText[9]}
                                     </p>
                                 </div>
                             </div>
@@ -242,7 +265,8 @@ export const PtBr = () => {
                         </div>
                     </div>
                 </div>
-            </body>
+            </div>
+            <FooterPt />
         </>
     );
 }

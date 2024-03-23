@@ -1,8 +1,15 @@
-import { createBrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import { Eng } from "../components/Eng";
+import { PtBr } from "../components/PtBr";
+import { Sidebar } from "./Sidebar";
 
-const url = [];
-
-export const Rotiator = createBrowserRouter({
-    history: "v"
-})  
+export const Rotiator = () => {
+    return (
+        <Routes>
+            <Route path="/" element={<Eng />} />
+            <Route path="/eng" element={<Eng />} />
+            <Route path="/pt-br" element={<PtBr />} />
+        </Routes>
+    )
+}
 
