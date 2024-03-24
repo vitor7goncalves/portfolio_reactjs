@@ -30,13 +30,13 @@ export const FooterEng = () => {
                                 <a href={social[0]}><img src={facebook} alt="facebook" /></a>
                             </div>
                             <div className="Icons">
-                                <a href={social[2]}><img src={github} alt="github" /></a>
+                                <a href={social[1]}><img src={github} alt="github" /></a>
                             </div>
                             <div className="Icons">
-                                <a href={social[3]}><img src={instagram} alt="instagram" /></a>
+                                <a href={social[2]}><img src={instagram} alt="instagram" /></a>
                             </div>
                             <div className="Icons">
-                                <a href={social[4]}><img src={linkedin} alt="linkedin" /></a>
+                                <a href={social[3]}><img src={linkedin} alt="linkedin" /></a>
                             </div>
                         </div>
                     </div>
