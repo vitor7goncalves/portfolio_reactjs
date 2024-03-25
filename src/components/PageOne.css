@@ -1,0 +1,60 @@
+.main {
+    width: 98.7vw;
+    padding: 7rem 0rem 2rem 0rem;
+}
+
+.main .goldButton img{
+    height: 2rem !important;
+    top: -29% !important;
+}
+
+.itemPagOne{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.objs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    text-align: center;
+}
+
+.text *{
+   margin: 1.5rem 0rem;
+   text-shadow: none;
+}
+
+.linkThird-party {
+    color: var(--gold-100);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.linkThird-party:hover {
+    opacity: 0.7;
+}
+
+.video {
+    width: 50%;
+}
+
+.borderCicle {
+    position: absolute;
+    width: 50%;
+    z-index: -1;
+    top: 2rem;
+    left: 10rem;
+}
+
+.borderBottom {
+    width: 100%;
+    margin-top: 3rem;
+}
