@@ -122,10 +122,7 @@ export const Eng = () => {
     textText[8] = "Netflix Clone";
     textText[9] = "Roll Dices Game";
     buttonText = "know more";
-
-    if ( window.location.href === "/")
-        window.location.href = "/eng"
-
+    
     useEffect(() => {
         const intervalId = setInterval(() => {
             setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imagePaths.length);
