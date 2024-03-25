@@ -4,12 +4,9 @@ import br from "../assets/br.jpg";
 import eua from "../assets/eua.jpg";
 
 export const Sidebar = () => {
-    const ptBr = () => {
-        window.location.href = '/pt-br';
-    };
-
-    const eng = () => {
-        window.location.href = '/eng';
+    const handleChangeLanguage = (lang) => {
+        localStorage.setItem('urlHome', lang);
+        window.location.href = lang;
     };
 
     return (
@@ -22,8 +19,8 @@ export const Sidebar = () => {
                             <a href=""><img src={logo} className='logo' alt="" /></a>
                         </div>
                         <div className='select'>
-                            <button onClick={ptBr}><img src={br} /></button>
-                            <button onClick={eng}><img src={eua} /></button>
+                            <button onClick={() => handleChangeLanguage('/pt-br')}><img src={br} /></button>
+                            <button onClick={() => handleChangeLanguage('/eng')}><img src={eua} /></button>
                         </div>
                     </div>
                 </div>

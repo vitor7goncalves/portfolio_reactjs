@@ -239,7 +239,7 @@ export const PtBr = () => {
                         </h2>
                         <div className="cards">
                             <div className="capsuleCard">
-                                <a href="" className="card">
+                                <a href="/trabalhosparaterceiros" className="card">
                                     <h3>
                                         Trabalhos para Terceiros
                                     </h3>

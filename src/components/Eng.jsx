@@ -239,7 +239,7 @@ export const Eng = () => {
                         </h2>
                         <div className="cards">
                             <div className="capsuleCard">
-                                <a href="" className="card">
+                                <a href="/third-partyprojects" className="card">
                                     <h3>
                                         Third-party Projects
                                     </h3>
