@@ -1,14 +1,18 @@
 .main {
-    width: 98.7vw;
-    padding: 7rem 0rem 2rem 0rem;
+    width: 100%;
 }
 
-.main .goldButton img{
+.objs .buttonImg,
+.objs .backgroundButton {
     height: 2rem !important;
     top: -29% !important;
 }
 
-.itemPagOne{
+.buttonImg:hover {
+    opacity: 0.7;
+}
+
+.itemPagOne {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,19 +25,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 10%;
 }
 
 .text {
     text-align: center;
 }
 
-.text *{
-   margin: 1.5rem 0rem;
-   text-shadow: none;
+.text * {
+    margin: 1.5rem 0rem;
+    text-shadow: none;
 }
 
+.text p,
+    h2 {
+        width: 97%;
+    }
+
 .linkThird-party {
-    color: var(--gold-100);
+    color: var(--blue-100);
     font-weight: 700;
     font-size: 1.2rem;
 }
@@ -43,18 +53,70 @@
 }
 
 .video {
-    width: 50%;
+    width: 70%;
+    margin-bottom: 7rem;
 }
 
 .borderCicle {
     position: absolute;
-    width: 50%;
+    width: 70%;
     z-index: -1;
-    top: 2rem;
-    left: 10rem;
+    top: 0%;
+    left: 0%;
 }
 
-.borderBottom {
+.BorderTop {
+    position: absolute;
     width: 100%;
-    margin-top: 3rem;
+    z-index: -2;
+    top: -2.5%;
+}
+
+@media (max-width: 570px) {
+    .linkThird-party {
+        font-size: .9rem;
+    }
+
+    .video {
+        margin-bottom: 10%;
+    }
+
+    .objs .blueButton {
+        width: 50%;
+        margin: 10% 0;
+    }
+
+    .objs .buttonImg,
+    .objs .backgroundButton {
+        top: -59% !important;
+    }
+
+    .borderCicle {
+        top: 37%;
+    }
+
+    .spaceBottom {
+        height: 5rem;
+    }
+}
+
+@media (max-width: 470px) {
+    .text p,
+    h2 {
+        width: 90%;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .borderCicle {
+        top: 40%;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .borderCicle {
+        top: 47%;
+    }
 }

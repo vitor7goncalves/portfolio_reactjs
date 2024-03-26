@@ -8,7 +8,7 @@ import buttonWhite from "../assets/Background/ButtonWhite.png";
 import backButton from "../assets/Background/BackButton.png";
 import OrfeuDigital from "../assets/Video/OrfeuDigital.mp4"
 import Border from "../assets/Background/CicleBorder.png"
-import BorderBottom from "../assets/Background/goldline2.jpg"
+import BorderTop from "../assets/Background/lineGold.jpg"
 
 export const PageOneEng = () => {
     const text = "Access the website";
@@ -27,6 +27,7 @@ export const PageOneEng = () => {
             <div className="main">
                 <div className="itemPagOne">
                     <div className="objs">
+                        <img className="BorderTop" src={BorderTop} alt="Border" />
                         <div className="text">
                             <h2>{title.one}</h2>
                             <p>
@@ -34,16 +35,16 @@ export const PageOneEng = () => {
                             </p>
                             <a className="linkThird-party" href="https://www.instagram.com/guigaugui/">Instagram Guilherme Gautério: https://www.instagram.com/guigaugui/</a>
                         </div>
-                        <a href={url[0]} className="goldButton">
-                            <img src={backButton} alt="" />
-                            <img className="buttonImg" src={buttonGold} alt="" />
+                        <a href={url[0]} className="blueButton ">
+                            <img className="backgroundButton" src={backButton} alt="Background button" />
+                            <img className="buttonImg" src={buttonBlue} alt="Button" />
                             <p>{text}</p>
                         </a>
-                        <img className="borderCicle" src={ Border } alt="" />
-                        <video className="video" src={ OrfeuDigital } muted autoPlay loop controls></video>
-                        <img className="borderBottom" src={BorderBottom} alt="Border" />
+                        <img className="borderCicle" src={Border} alt="" />
+                        <video className="video" src={OrfeuDigital} muted autoPlay loop controls></video>
                     </div>
                     <div className="objs">
+                        <img className="BorderTop" src={BorderTop} alt="Border" />
                         <div className="text">
                             <h2>{title.one}</h2>
                             <p>
@@ -51,15 +52,16 @@ export const PageOneEng = () => {
                             </p>
                             <a className="linkThird-party" href="https://www.instagram.com/guigaugui/">Instagram Guilherme Gautério: https://www.instagram.com/guigaugui/</a>
                         </div>
-                        <a href={url[0]} className="goldButton">
-                            <img src={backButton} alt="" />
-                            <img className="buttonImg" src={buttonGold} alt="" />
+                        <a href={url[0]} className="blueButton ">
+                            <img className="backgroundButton" src={backButton} alt="Background button" />
+                            <img className="buttonImg" src={buttonBlue} alt="Button" />
                             <p>{text}</p>
                         </a>
-                        <img className="borderCicle" src={ Border } alt="" />
-                        <video className="video" src={ OrfeuDigital } muted autoPlay loop controls></video>
+                        <img className="borderCicle" src={Border} alt="" />
+                        <video className="video" src={OrfeuDigital} muted autoPlay loop controls></video>
                     </div>
                 </div>
+                <div className="spaceBottom"></div>
             </div>
             <FooterEng />
         </>
