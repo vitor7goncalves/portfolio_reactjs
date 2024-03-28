@@ -247,7 +247,7 @@ export const PtBr = () => {
                                 </a>
                             </div>
                             <div className="capsuleCard">
-                                <a href="" className="card">
+                                <a href="/jogosdigitais" className="card">
                                     <h3>
                                         Jogos Digitais
                                     </h3>
@@ -255,7 +255,7 @@ export const PtBr = () => {
                                 </a>
                             </div>
                             <div className="capsuleCard">
-                                <a href="" className="card">
+                                <a href="/myprojects" className="card">
                                     <h3>
                                         Meus Projetos
                                     </h3>

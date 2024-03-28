@@ -247,7 +247,7 @@ export const Eng = () => {
                                 </a>
                             </div>
                             <div className="capsuleCard">
-                                <a href="" className="card">
+                                <a href="/digitalgames" className="card">
                                     <h3>
                                         Digital Games
                                     </h3>
@@ -255,7 +255,7 @@ export const Eng = () => {
                                 </a>
                             </div>
                             <div className="capsuleCard">
-                                <a href="" className="card">
+                                <a href="/myprojects" className="card">
                                     <h3>
                                         My Projects
                                     </h3>

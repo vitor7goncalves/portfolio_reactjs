@@ -38,11 +38,12 @@
 }
 
 .text p,
-    h2 {
-        width: 97%;
-    }
+.text h2 {
+    width: 97%;
+}
 
 .linkThird-party {
+    text-align: center;
     color: var(--blue-100);
     font-weight: 700;
     font-size: 1.2rem;
@@ -57,6 +58,12 @@
     margin-bottom: 7rem;
 }
 
+.youtube {
+    width: 70%;
+    height: 33rem;
+    margin-bottom: 7rem;
+}
+
 .borderCicle {
     position: absolute;
     width: 70%;
@@ -65,11 +72,46 @@
     left: 0%;
 }
 
+.borderCicleLast {
+    position: absolute;
+    width: 70%;
+    z-index: -1;
+    top: 5%;
+    left: 0%;
+}
+
+
 .BorderTop {
     position: absolute;
     width: 100%;
     z-index: -2;
     top: -2.5%;
+}
+
+.spaceBottomTwo {
+    height: 7rem;
+}
+
+@media (max-width: 1025px) {
+    .youtube {
+        height: 25rem;
+    }
+}
+
+@media (max-width: 915px) {
+    .youtube {
+        height: 22rem;
+    }
+}
+
+@media (max-width: 855px) {
+    .youtube {
+        height: 20rem;
+    }
+
+    .spaceBottomTwo {
+        height: 3rem;
+    }
 }
 
 @media (max-width: 570px) {
@@ -79,6 +121,10 @@
 
     .video {
         margin-bottom: 10%;
+    }
+
+    .youtube {
+        height: 17rem;
     }
 
     .objs .blueButton {
@@ -95,15 +141,32 @@
         top: 37%;
     }
 
+    .borderCicleLast {
+        top: 37%;
+    }
+
     .spaceBottom {
         height: 5rem;
     }
 }
 
 @media (max-width: 470px) {
+
     .text p,
     h2 {
         width: 90%;
+    }
+
+    .linkThird-party {
+        width: 80%;
+    }
+
+    .youtube {
+        height: 12rem;
+    }
+
+    .borderCicleLast {
+        top: 44%;
     }
 }
 
@@ -111,6 +174,10 @@
 
     .borderCicle {
         top: 40%;
+    }
+
+    .borderCicleLast {
+        top: 52%;
     }
 }
 
