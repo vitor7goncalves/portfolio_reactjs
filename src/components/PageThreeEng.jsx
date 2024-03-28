@@ -6,7 +6,7 @@ import buttonBlue from "../assets/Background/ButtonBlue.png";
 import buttonGold from "../assets/Background/GoldButton.png";
 import buttonWhite from "../assets/Background/ButtonWhite.png";
 import backButton from "../assets/Background/BackButton.png";
-import OrfeuDigital from "../assets/Video/OrfeuDigital.mp4"
+import StormWizard from "../assets/Video/StormWizardSudios.mp4"
 import CompanhiaDoSono from "../assets/Video/CompanhiaDoSono.mp4"
 import Border from "../assets/Background/CicleBorder.png"
 import BorderTop from "../assets/Background/lineGold.jpg"
@@ -14,18 +14,19 @@ import BorderTop from "../assets/Background/lineGold.jpg"
 export const PageThreeEng = () => {
     const text = {
         0: 'Access the website',
-        1: 'Website inaccessible '
+        1: 'Access my GitHub for more'
     };
     const title = {
-        one: 'Orfeu Digital Page',
-        two: 'Companhia do Sono Page',
+        one: 'Storm Wizard Studios Page',
+        two: 'Netflix Clone Page',
     }
     const content = {
-        1: "The Orfeu Digital page was developed using Vue.js and Vite.js. The idea here is to have just a static website to showcase Orfeu Digital's services to its clients, as this already met the company's needs. As part of the requirement was to be found by search engines, SEO concepts were applied. The visual design was created by Guilherme Gautério.",
-        2: "Companhia do Sono is a mattress distributor partnered with Ortobom. The idea of the website is to create a showcase of mattresses on sale, simple and straightforward, meeting the customer's needs. I created an API and Database for replacing images and editing texts. A login area and other factors to ensure site security. And a popup to exchange administrator data on the site. The frontend was created with Vue.js and Vite.js. The backend was created with DotNet (C#). Wampserver and DBeaver for the Database. The visual design was created by Guilherme Gautério.",
+        1: "I created the Storm Wizard Studios website to promote my games more professionally. Even though it's a static site, it's enough to keep players informed about the games' news. The site was built with React.js and Vite.js, and the visual design was created by me.",
+        2: "The Netflix clone is a website I developed during my initial studies in HTML, CSS, and JavaScript. This project was part of a challenge proposed by the Digital Innovation One Bootcamp, where I took a series of courses and obtained several certificates. The original challenge was to recreate the first page after the client logs in. However, upon completion, I decided to challenge myself even further by creating the homepage and login form from scratch. As a beginner, I faced several challenges, with the main one being making the site responsive.",
     }
     const url = { 1: '', 2: '', 3: '' };
-    url[0] = "https://orfeudigital.com";
+    url[0] = "https://stormwizardmaguspocus.netlify.app";
+    url[1] = "https://github.com/vitor7goncalves/Netflix-clone";
 
     return (
         <>
@@ -39,7 +40,6 @@ export const PageThreeEng = () => {
                             <p>
                                 {content[1]}
                             </p>
-                            <a className="linkThird-party" href="https://www.instagram.com/guigaugui/">Instagram Guilherme Gautério: https://www.instagram.com/guigaugui/</a>
                         </div>
                         <a href={url[0]} className="blueButton ">
                             <img className="backgroundButton" src={backButton} alt="Background button" />
@@ -47,7 +47,7 @@ export const PageThreeEng = () => {
                             <p>{text[0]}</p>
                         </a>
                         <img className="borderCicle" src={Border} alt="" />
-                        <video className="video" src={OrfeuDigital} muted autoPlay loop controls></video>
+                        <video className="video" src={StormWizard} muted autoPlay loop controls></video>
                     </div>
                     <div className="objs">
                         <img className="BorderTop" src={BorderTop} alt="Border" />
@@ -57,15 +57,16 @@ export const PageThreeEng = () => {
                                 {content[2]}
                             </p>
                         </div>
-                        <div className="blueButton">
+                        <a href={url[1]} className="blueButton ">
                             <img className="backgroundButton" src={backButton} alt="Background button" />
+                            <img className="buttonImg" src={buttonBlue} alt="Button" />
                             <p>{text[1]}</p>
-                        </div>
-                        <img className="borderCicle" src={Border} alt="" />
-                        <video className="video" src={CompanhiaDoSono} muted autoPlay loop controls></video>
+                        </a>
+                        <img className="borderCicleLast" src={Border} alt="" />
+                        <iframe className="youtube" src="https://www.youtube.com/embed/Bvrq5t6KX8s?si=cr0U5HJeJ9lJlCpu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
-                <div className="spaceBottom"></div>
+                <div className="spaceBottomTwo"></div>
             </div>
             <FooterEng />
         </>
