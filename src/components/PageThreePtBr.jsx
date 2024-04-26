@@ -25,7 +25,7 @@ export const PageThreePtBr = () => {
         2: "O Netflix clone é um site que desenvolvi durante meus estudos iniciais em HTML, CSS e JavaScript. Este projeto foi parte de um desafio proposto pelo Bootcamp Digital Innovation One, onde participei de uma série de cursos e obtive vários certificados. O desafio original era recriar a primeira página após o cliente efetuar o login. No entanto, após a conclusão, decidi me desafiar ainda mais, criando a página inicial e o formulário de login do zero. Como iniciante, enfrentei diversos desafios, sendo o principal deles tornar o site responsivo.",
     }
     const url = { 1: '', 2: '', 3: '' };
-    url[0] = "https://stormwizardmaguspocus.netlify.app";
+    url[0] = "https://stormwizardstudios.netlify.app";
     url[1] = "https://github.com/vitor7goncalves/Netflix-clone";
 
     return (
