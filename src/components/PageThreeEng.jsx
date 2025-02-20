@@ -7,6 +7,7 @@ import buttonGold from "../assets/Background/GoldButton.png";
 import buttonWhite from "../assets/Background/ButtonWhite.png";
 import backButton from "../assets/Background/BackButton.png";
 import StormWizard from "../assets/Video/StormWizardSudios.mp4"
+import BoutiqueEtherea from "../assets/Video/Fashion.mp4"
 import CompanhiaDoSono from "../assets/Video/CompanhiaDoSono.mp4"
 import Border from "../assets/Background/CicleBorder.png"
 import BorderTop from "../assets/Background/lineGold.jpg"
@@ -29,6 +30,7 @@ export const PageThreeEng = () => {
     const url = { 1: '', 2: '', 3: '' };
     url[0] = "https://stormwizardmaguspocus.netlify.app";
     url[1] = "https://github.com/vitor7goncalves/Netflix-clone";
+    url[2] = "https://boutiqueetherea.netlify.app";
 
     return (
         <>
@@ -81,7 +83,7 @@ export const PageThreeEng = () => {
                             <p>{text[0]}</p>
                         </a>
                         <img className="borderCicleLast" src={Border} alt="" />
-                        <iframe className="youtube" src="https://youtu.be/wjmxXIYhoTQ?si=-tYoycTuhz0awyoM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <video className="video" src={BoutiqueEtherea} muted autoPlay loop controls></video>
                     </div>
                 </div>
                 <div className="spaceBottomTwo"></div>
