@@ -28,7 +28,7 @@ export const PageThreeEng = () => {
         3: "Boutique Etherea is a project I started developing to practice and challenge my skills in front-end and back-end. The idea is to create a website where a client can display their clothing collections. Users will have access to the products showcased on the site and will be able to create a wishlist with their favorite items. The site features a display of the users' favorite pieces to help understand which items are the most sought after. The website is still incomplete, as it is a large-scale project and demands a lot from me to develop. As with any project in development, there may be some bugs that I am working to fix. For this project, I use Vue.js for the front-end, .Net for the back-end, and WampServer with DBeaver for the database. The front-end part is accessible because it is online, but information that depends on the back-end is unavailable since it runs locally."
     }
     const url = { 1: '', 2: '', 3: '' };
-    url[0] = "https://stormwizardmaguspocus.netlify.app";
+    url[0] = "https://stormwizardstudios.netlify.app";
     url[1] = "https://github.com/vitor7goncalves/Netflix-clone";
     url[2] = "https://boutiqueetherea.netlify.app";
 
